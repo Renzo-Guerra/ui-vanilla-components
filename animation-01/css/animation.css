@@ -1,0 +1,52 @@
+.soundWave{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 4rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.soundWave div{
+  height: .4rem;
+  width: .4rem;
+  animation-name: expandAndChangeColor;
+  animation-duration: 3000ms;
+  border-radius: 16px 16px 16px 16px;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes expandAndChangeColor{
+  0%{
+    background-color: var(--col-primary);
+    height: .4rem;
+  }
+  20%{
+    background-color: var(--col-secondary);;
+    height: 5rem;
+  }
+  40%{
+    background-color: var(--col-third);;
+    height: .4rem;
+  }
+  100%{
+    background-color: var(--col-primary);
+  }
+}
+
+.soundWave div:first-child{
+  animation-delay: 0;
+}
+.soundWave div:nth-child(2){
+  animation-delay: 300ms;
+}
+.soundWave div:nth-child(3){
+  animation-delay: 600ms;
+}
+.soundWave div:nth-child(4){
+  animation-delay: 900ms;
+}
+.soundWave div:nth-child(5){
+  animation-delay: 1200ms;
+}

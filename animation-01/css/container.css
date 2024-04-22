@@ -1,0 +1,8 @@
+.container{
+  display: flex;
+  min-height: 100vh;
+  background:linear-gradient(28deg, var(--col-back-primary), var(--col-back-secondary));
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}

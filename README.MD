@@ -8,3 +8,6 @@ Found out about [Atheros's founder repo](https://github.com/atherosai/ui) in whi
 
 ### Accordion-02:
 - Pretty much the same as the [accordion-01](#accordion-01)
+
+### Accordion-03:
+- CSS3 Animation
