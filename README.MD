@@ -11,3 +11,10 @@ Found out about [Atheros's founder repo](https://github.com/atherosai/ui) in whi
 
 ### Animation-01:
 - CSS animations (Keyframes)
+
+### Button-01:
+- CSS within an SVG habing a <rect />
+  - stroke-width.
+  - stroke-dasharray: Array with values which indicates strokes lenght and spaces length.
+  - stroke-dashoffset: Offset of the dasharray.
+  

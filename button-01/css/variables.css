@@ -1,0 +1,8 @@
+:root{
+  --color-primary--400: #111;
+  --color-secondary: #fff;
+  --color-action--400: #00bbff;
+  --color-action--800: #255c70;
+
+  --font-family: "Share Tech Mono", monospace;
+}

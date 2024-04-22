@@ -1,0 +1,8 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  min-height: 100vh;
+  background: radial-gradient(var(--color-action--800), var(--color-primary--400));
+}

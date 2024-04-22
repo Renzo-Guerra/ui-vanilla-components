@@ -1,0 +1,50 @@
+a.button{
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+
+.button{
+  font-family: inherit;
+  position: relative;
+  padding: .3rem .8rem;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  color: var(--color-action--400);
+  font-size: 2rem;
+  background-color: var(--color-primary--400);
+}
+
+.button:focus{
+  outline: var(--color-primary--400);
+  outline-width: 4px;
+  outline-offset: 2px;
+  outline-style: solid;
+}
+
+
+.button svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.rectangle{
+  fill: transparent;
+  width: 100%;
+  height: 100%;
+  stroke: var(--color-action--400);
+  stroke-width: .4rem;
+  stroke-dasharray: 50, 300;
+  stroke-dashoffset: 50;  
+  transition: 
+    stroke-dasharray 1000ms ease-out,
+    stroke-dashoffset 1000ms ease-out
+}
+
+.button:hover .rectangle{
+  stroke-dasharray: 100%, 0;
+  stroke-dashoffset: 60%;
+}
