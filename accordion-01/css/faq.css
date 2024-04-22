@@ -1,0 +1,40 @@
+.faq {
+  width: 100%;
+  margin: 0 auto;
+  font-family: var(--font);
+  border: 1px solid var(--color-faq-border);
+  transition: all 0.3s ease-in-out;
+  border-radius: .4rem;
+}
+
+.faq.faq:hover{
+  border: 1px solid var(--color-faq-border--hover);
+}
+
+.faq__title-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-header);
+  opacity: .6;
+}
+
+.faq__title-container:hover {
+  opacity: 1;
+}
+
+.faq__title {
+  width: 90%;
+}
+
+.faq__expand-icon {
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+}
+
+.faq__content {
+  padding: .2rem 1rem 1rem 1rem;
+}
