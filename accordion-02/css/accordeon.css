@@ -1,0 +1,70 @@
+.accordeon{
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.accordeon__header{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  position: relative;
+  cursor: pointer;
+  background: var(--color-passive);
+  padding: .5rem;
+  color: var(--color-font);
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: 
+    color 200ms ease-out,
+    background 200ms ease-out;
+}
+
+.accordeon__header:hover{
+  color: var(--color-primary--400);
+  background: var(--color-font--hover);
+}
+
+.accordeon__header.accordeon__header--open{
+  background: var(--color-primary--400);
+  color: var(--color-passive);
+}
+
+.accordeon__header--open .accordeon__arrow{
+  transform: rotate(90deg);
+}
+
+
+/* Iconos del header */
+.accordeon__leftIcon{
+  font-size: 1.2rem;
+}
+.accordeon__arrow{
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+  transform: rotate(0deg);
+  transition: transform 100ms ease-in-out;
+}
+
+.accordeon__list{
+  background-color: rgb(191, 131, 194);
+  height: 0;
+  transition: height 200ms ease;
+}
+
+.accordeon__list > li{
+  list-style: none;
+}
+.accordeon__list a{
+  text-decoration: none;
+  color: rgb(15, 6, 25);
+  width: 100%;
+  display: block;
+  padding: .5rem;
+  transition: color 300ms ease-out;
+}
+
+.accordeon__list li:hover a{
+  color: var(--color-passive);
+}

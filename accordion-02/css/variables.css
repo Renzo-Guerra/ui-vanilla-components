@@ -1,0 +1,8 @@
+:root{
+  --color-primary--400: rgb(130, 24, 251);
+  --color-secondary--400: rgb(191, 131, 194);
+  --color-passive: rgb(250, 250, 250);
+  --color-font: rgb(27, 9, 30);
+  --color-font--hover: rgb(238, 224, 255);
+  --font-family: "Poppins", sans-serif;
+}

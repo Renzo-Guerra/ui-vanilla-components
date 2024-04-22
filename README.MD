@@ -6,3 +6,5 @@ Found out about [Atheros's founder repo](https://github.com/atherosai/ui) in whi
 - Details tag: It allows you in a really easy way to display a FAQ acordion.
 - Summary tag: Displays the text of the accordion when it's closed.
 
+### Accordion-02:
+- Pretty much the same as the [accordion-01](#accordion-01)
