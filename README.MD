@@ -20,3 +20,10 @@ Found out about [Atheros's founder repo](https://github.com/atherosai/ui) in whi
 
 ### Button-02:
 - CSS transition using border and outline.
+
+### Button-03:
+- CSS transition using border and outline.
+- :before and :after.
+- background-size and background:lineal-gradient(). 
+
+

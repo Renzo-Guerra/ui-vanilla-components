@@ -1,0 +1,74 @@
+.button{
+  padding: 1rem 1.8rem;
+  color: var(--col-text);
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 100;
+  font-family: var(--font-family);
+  position: relative;
+  z-index: 100;
+  border-radius: 2rem;
+  outline: solid 2px transparent;
+  outline-offset: 1px;
+  transition: 
+    outline 300ms linear,
+    outline-offset 300ms linear;
+}
+
+.button:focus{
+  opacity: 1;
+  outline: solid 1px var(--col-text);
+  outline-offset: 4px;
+}
+
+.button:before{
+  content: '';
+  position: absolute;
+  z-index: -100;
+  left: calc(var(--glow-size) / 2 * -1);
+  top: calc(var(--glow-size) / 2 * -1);
+  background: linear-gradient(
+    to right,
+    var(--col-glim-1),
+    var(--col-glim-2),
+    var(--col-glim-3),
+    var(--col-glim-4),
+    var(--col-glim-1)
+  );
+  background-size: 300%;
+  width: calc(100% + var(--glow-size));
+  height: calc(100% + var(--glow-size));
+  filter: blur(var(--glow-size));
+  border-radius: 2rem;
+  opacity: 0;
+  animation-name: glow;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: opacity 600ms ease-out;
+}
+
+@keyframes glow {
+  0%{
+    background-position: 0% 0%;
+  }
+  100%{
+    background-position: 300% 0%;
+  }
+}
+.button:hover:before{
+  opacity: 1;
+}
+
+.button:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  border-radius: 2rem;
+  background-color: var(--col-background-btn);
+  width: 100%;
+  height: 100%;
+}

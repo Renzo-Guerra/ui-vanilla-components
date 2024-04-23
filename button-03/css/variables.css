@@ -1,0 +1,12 @@
+:root{
+  --col-background: #060D23;
+  --col-text: #f2f0ff;
+  --col-background-btn: #3F396F;
+  --col-glim-1: #FFBB70;
+  --col-glim-2: #2C7865;
+  --col-glim-3: #8DECB4;
+  --col-glim-4: #D875C7;
+  --glow-size: .6rem;
+
+  --font-family: "Manrope", sans-serif;
+}
