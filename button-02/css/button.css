@@ -1,0 +1,24 @@
+.button{
+  padding: .5rem 1.8rem;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: solid 0px transparent;
+  outline: solid 2px white;
+  outline-offset: 0px;
+  letter-spacing: .1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 
+    outline 600ms ease-out,
+    outline-offset 600ms ease-out,
+    border 600ms linear,
+    color 600ms ease-in-out;
+}
+
+.button:hover{
+  outline: solid 2px transparent;
+  outline-offset: 1rem;
+  color: var(--color-action);
+  border: solid 2px var(--color-action);
+}

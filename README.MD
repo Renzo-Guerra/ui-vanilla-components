@@ -17,4 +17,6 @@ Found out about [Atheros's founder repo](https://github.com/atherosai/ui) in whi
   - stroke-width.
   - stroke-dasharray: Array with values which indicates strokes lenght and spaces length.
   - stroke-dashoffset: Offset of the dasharray.
-  
+
+### Button-02:
+- CSS transition using border and outline.
