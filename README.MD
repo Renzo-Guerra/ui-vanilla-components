@@ -28,3 +28,7 @@ Found out about [Atheros's founder repo](https://github.com/atherosai/ui) in whi
 
 ### Card-01:
 - CSS grid.
+
+### Card-02:
+- Transitions using the transform property
+- Play with the position of the elements (the z-index)
