@@ -1,0 +1,118 @@
+.card{
+  display: flex;
+  /* so that the ".card__specs" uses .card as the father container */
+  position: relative;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+  font-family: var(--font-family);
+  background-color: var(--color-primary);
+  box-shadow: 0 0 6px -2px black;
+}
+.card>a{
+  text-decoration: none;
+  color: black;
+}
+
+.card__image-container{
+  display: flex;
+  position: relative;
+}
+
+.card__floating-info{
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1.2rem;
+  border-radius: .4rem;
+  padding: .1rem .4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 10px -3px black;
+}
+.card__image-container{
+  height: 13rem;
+  overflow: hidden;
+}
+
+.card__image{
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+  object-position: center;
+  scale: 1;
+  transition: scale 400ms ease-out;
+}
+
+.card__info{
+  display: flex;
+  flex-grow: 1;
+  gap: .5rem;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
+.card__title{
+  font-size: 1.5rem;
+}
+
+.card__text{
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+}
+
+.card__specs{
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+
+.card__specs button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  padding: .1rem;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.card__specs button{
+  color: black;
+  cursor: pointer;
+}
+
+.card__specs button.liked{
+  color: red;
+  animation-name: jump;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  animation-direction: normal;
+}
+
+@keyframes jump{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 1024px){  
+  .card:hover .card__image{
+    scale: 1.1;
+  }
+}
