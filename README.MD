@@ -35,3 +35,6 @@ Found out about [Atheros's founder repo](https://github.com/atherosai/ui) in whi
 
 ### Card-03:
 - Animation to display the heart.
+
+### Card-03:
+- CSS efects aplied to ::before and ::after pseudoclases
